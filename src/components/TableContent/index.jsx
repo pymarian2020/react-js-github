@@ -3,7 +3,6 @@ import React from "react";
 import { Commit, Wrapper, Repo } from "./TableContent.styles";
 
 export const TableContent = ({ repositoryList }) => {
-  console.log(repositoryList);
   return (
     <Wrapper>
       <Repo>
@@ -14,8 +13,8 @@ export const TableContent = ({ repositoryList }) => {
               {repo.repository}
               <h2>Commits</h2>
               <Commit>
-                {repo.commits.map((commit) => {
-                  return <li>{commit}</li>;
+                {repo.commits.map((commit, index) => {
+                  return <li key={index}>{commit}</li>;
                 })}
               </Commit>
             </div>

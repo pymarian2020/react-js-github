@@ -57,6 +57,11 @@ export const SearchBar = ({ callbackList }) => {
         placeholder="Enter Username"
         onChange={(e) => setUser(e.target.value)}
         value={user}
+        onKeyPress={(e) => {
+          if (e.key === "Enter") {
+            clickHandler();
+          }
+        }}
       />
       <Button type="submit" onClick={clickHandler}>
         Search
