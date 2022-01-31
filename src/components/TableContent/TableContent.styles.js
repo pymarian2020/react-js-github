@@ -1,24 +1,17 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  display: flex;
-  width: 90vw;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: space-between;
+  margin: auto;
+  width: 70vw;
+  min-width: 500px;
 `;
 
 export const Repo = styled.div`
   border: black solid 2px;
-  padding: 0.5rem;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, 50%); */
+  padding: 1rem;
 `;
 
 export const Commit = styled.ul`
-  /* display: grid;
-  grid-template-columns: repeat(auto-fill, 50%); */
   border: black solid 2px;
-  padding: 0.5rem;
-  padding: 1rem;
+  padding: 2rem;
 `;
